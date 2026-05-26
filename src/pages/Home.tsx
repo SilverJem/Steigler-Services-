@@ -322,7 +322,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div {...fadeIn} className="mt-16 text-center">
-              <Link to="/projects" className="border-2 border-primary text-primary px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-primary hover:text-white transition-all inline-block font-bold rounded-sm">
+              <Link to="/projects" className="border-2 rounded-md border-primary text-primary px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-primary hover:text-white transition-all inline-block font-bold ">
                 All Projects
               </Link>
             </motion.div>
@@ -330,15 +330,15 @@ export default function Home() {
         </section>
 
         {/* By The Numbers (Kept from new design) */}
-        <section className="py-24 page-hero border-b border-outline-variant/50">
+        <section className="py-24 bg-surface-white border-b border-outline-variant/50">
           <div className="max-w-max-width mx-auto px-margin-desktop relative z-10 grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
             <motion.div {...fadeIn} className="md:col-span-5">
               <span className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary mb-4 flex items-center gap-2 before:content-[''] before:block before:w-6 before:h-0.5 before:bg-primary">By The Numbers</span>
-              <h2 className="font-display-lg text-headline-lg text-white mb-6 leading-tight">A Track Record<br/>Worth Trusting</h2>
-              <p className="font-body-md text-body-md text-white/70 mb-10 max-w-md">
+              <h2 className="font-display-lg text-headline-lg  mb-6 leading-tight">A Track Record<br/>Worth Trusting</h2>
+              <p className="font-body-md text-body-md text-secondary  mb-10 max-w-md">
                 Over a decade of consistent performance across sectors and geographies — these numbers reflect our commitment to excellence.
               </p>
-              <Link to="/about" className="border-2 rounded-md border-white text-white px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-white hover:text-black transition-all w-max flex items-center gap-2 font-bold">
+              <Link to="/about" className="border-2 rounded-md border-primary text-primary px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-white hover:text-primary transition-all w-max flex items-center gap-2 font-bold">
                 About Us
               </Link>
             </motion.div>
@@ -359,7 +359,7 @@ export default function Home() {
               ].map(({ val, label }) => (
                 <motion.div key={label} variants={staggerItem}>
                   <div className="font-display-lg text-primary text-center text-[48px] leading-none mb-2 font-bold">{val}</div>
-                  <div className="font-label-md text-white/70 text-center uppercase tracking-widest">{label}</div>
+                  <div className="font-label-md text-secondary text-center uppercase tracking-widest">{label}</div>
                 </motion.div>
               ))}
             </motion.div>

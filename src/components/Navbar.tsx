@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import logo from '../../public/steigler-logo.png'
+import logo from '../assets/logo.png'
 const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Services', path: '/services' },
-  { label: 'Projects', path: '/projects' },
-  { label: 'Contact', path: '/contact' },
+ // { label: 'Projects', path: '/projects' },
 ];
 
 export default function Navbar() {
@@ -31,7 +30,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
         <Link to="/" className="font-headline-md text-headline-md font-bold text-primary">
          <img src={logo} alt="logo" className='w-20' />
-        </Link>
+        </Link> 
 
         <div className="hidden md:flex space-x-8 items-center h-full">
           {navLinks.map(({ label, path }) => {
@@ -59,9 +58,9 @@ export default function Navbar() {
 
         <Link
           to="/contact"
-          className="bg-primary text-on-primary px-8 py-3 font-label-lg uppercase tracking-wider hover:bg-teal-dark transition-all duration-200"
+          className="bg-primary text-on-primary rounded-md px-8 py-3 font-label-lg uppercase tracking-wider hover:bg-teal-dark transition-all duration-200"
         >
-          Get Started
+          Contact Us
         </Link>
       </div>
     </motion.nav>

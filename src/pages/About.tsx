@@ -57,6 +57,29 @@ export default function About() {
             />
           </motion.div>
         </section>
+  {/* Vision & Mission (Original Stitch) */}
+        <section className="bg-surface-container-low rounded-2xl py-24 border-b border-outline-variant/50">
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+            className="px-margin-desktop max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-16"
+          >
+            <motion.div variants={staggerItem} className="border-l-4 border-primary pl-8 py-4">
+              <h2 className="font-headline-lg text-headline-lg mb-6 font-bold">Our Vision</h2>
+              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                To be the most trusted strategic catalyst in the emerging and developed markets of Africa, the Middle East, and Europe. We envision a future where borders are conduits for shared prosperity, facilitated by world-class advisory.
+              </p>
+            </motion.div>
+            <motion.div variants={staggerItem} className="border-l-4 border-secondary pl-8 py-4">
+              <h2 className="font-headline-lg text-headline-lg mb-6 font-bold">Our Mission</h2>
+              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                To deliver data-driven insights and rigorous strategic frameworks that solve the most complex challenges facing modern enterprises. We are committed to transparency, excellence, and the relentless pursuit of client success.
+              </p>
+            </motion.div>
+          </motion.div>
+        </section>
 
         {/* Our Story (from new design) */}
         <section className="py-24 bg-surface-white rounded-2xl border-y border-outline-variant/50">
@@ -105,30 +128,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Vision & Mission (Original Stitch) */}
-        <section className="bg-surface-container-low rounded-2xl py-24 border-b border-outline-variant/50">
-          <motion.div 
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-            className="px-margin-desktop max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-16"
-          >
-            <motion.div variants={staggerItem} className="border-l-4 border-primary pl-8 py-4">
-              <h2 className="font-headline-lg text-headline-lg mb-6 font-bold">Our Vision</h2>
-              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                To be the most trusted strategic catalyst in the emerging and developed markets of Africa, the Middle East, and Europe. We envision a future where borders are conduits for shared prosperity, facilitated by world-class advisory.
-              </p>
-            </motion.div>
-            <motion.div variants={staggerItem} className="border-l-4 border-secondary pl-8 py-4">
-              <h2 className="font-headline-lg text-headline-lg mb-6 font-bold">Our Mission</h2>
-              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                To deliver data-driven insights and rigorous strategic frameworks that solve the most complex challenges facing modern enterprises. We are committed to transparency, excellence, and the relentless pursuit of client success.
-              </p>
-            </motion.div>
-          </motion.div>
-        </section>
-
+      
         {/* Core Values (from new design) */}
         <section className="py-24 bg-surface-white rounded-2xl border-b border-outline-variant/50">
           <div className="max-w-max-width mx-auto px-margin-desktop">
@@ -270,62 +270,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Leadership & Vision (Original Stitch) */}
-        <section className="py-24 px-margin-desktop max-w-max-width mx-auto bg-surface">
-          <motion.div {...fadeIn} className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-            <div className="max-w-2xl">
-              <span className="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary mb-4 flex items-center gap-2 before:content-[''] before:block before:w-6 before:h-0.5 before:bg-primary">Our Team</span>
-              <h2 className="font-headline-lg text-headline-lg mb-4">Leadership &amp; Vision</h2>
-              <p className="font-body-md text-body-md text-secondary">Our partners bring decades of combined expertise from the world's leading financial and strategic institutions.</p>
-            </div>
-          </motion.div>
-          <motion.div 
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 md:grid-cols-12 gap-gutter"
-          >
-            {/* Lead Card */}
-            <motion.div variants={staggerItem} className="md:col-span-6 group overflow-hidden border border-outline-variant/50 bg-surface-white rounded-2xl">
-              <div className="aspect-[16/9] overflow-hidden">
-                <img
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  alt="Marcus Steigler"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPelQrRF4v7HyY5lo8H02h7dJUQHiV2fdnrDq4RyIC3bnFPiX5Xz3-2tWePMwtqSKUqV16NCSRvMmzpypFHKemzws7RJxK-VG_3jfU4jZzJFp67Zl_uGPKrYZw3lywCop-KmPvRuBIeLwTUl9zLAWZRMqPx1SEPMBw8mVxpf5sLnnypXnt8sPQ4RKOl2WojfgtQk1Rv9W4KHRFWKaIOI4IdJK6sI4zYJaRPV9GDYWvol_sHcBnIc5LBby5x2CZ73uc7hTsl4DqVfk"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="font-headline-md text-headline-md mb-1 font-bold">Marcus Steigler</h3>
-                <p className="font-label-md text-label-md text-primary uppercase tracking-widest mb-4">Founding Partner &amp; CEO</p>
-                <p className="font-body-md text-body-md text-secondary">Formerly a Senior Director at global investment firms, Marcus leads the firm's strategic direction across EMEA.</p>
-              </div>
-            </motion.div>
-            {/* Secondary Cards */}
-            {[
-              {
-                name: 'Sarah Al-Fayed',
-                role: 'Partner, Middle East',
-                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAwx4GnoHCUNv_ne_J9m3CEj8dbV40UsCfMyTykncNxgokDq9eKmQiq3oR-AMv8pBnCyMPWZ_RmsvkP9LAf4nhiCF03Xr_PpmrY19zRBhfe-7A4HlOUKDu1UF-sDQ1r1ELSqYHwdP66gnVjiNppi1s06OA2syACqFdkf4LO8H2MaWg15QWS3CxTM0vC0RLlfcyTlP4iobtIfEJjWgT3BXiLwy-TDfi5i36E2gjwTBSQNC-TA9xuQwYIp7e4xb5g3norBZI3AtMP1jw',
-              },
-              {
-                name: 'David Chen',
-                role: 'Partner, Strategy',
-                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDw1LXrAWpiaF5cv9VqBoFIhZKAQh3STCS2w_1zWj4Mi1McmhCDNiVp0nXMOrXLLy8SEb934qjJ-oRpy543nNMYNrGW5kizdfaQtYFW5Z6kSog5djsHrXBjbmygY1WliWjBD2KlfXX390UWF7ScrB-Z2_iTUqcJRieexJq-Y_FWMiEESD2EwzT35AUS0mS8fZtJIRl2ExQIFGEZviz7qqQuBVa0Ekzbz2I4FM6IH_zYk1tq9sKWaFHutblqaXgLziV1UVVB_pkRugE',
-              },
-            ].map(({ name, role, img }) => (
-              <motion.div key={name} variants={staggerItem} className="md:col-span-3 group overflow-hidden border border-outline-variant/50 bg-surface-white rounded-2xl">
-                <div className="aspect-square overflow-hidden">
-                  <img className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt={name} src={img} />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-label-lg text-label-lg mb-1 font-bold">{name}</h3>
-                  <p className="font-label-md text-label-md text-primary uppercase tracking-widest">{role}</p>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </section>
+    
 
         {/* CTA Section */}
         <section className="py-24 px-margin-desktop max-w-max-width mx-auto text-center border-t border-outline-variant/50">
@@ -335,10 +280,10 @@ export default function About() {
               Tell us about your challenge — we'll tell you how we can help. Reach out to our partners today.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Link to="/contact" className="bg-primary text-white px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-teal-dark transition-all flex items-center justify-center gap-2 group font-bold rounded-full shadow-md hover:shadow-lg">
+              <Link to="/contact" className="bg-primary text-white px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-teal-dark transition-all flex items-center justify-center gap-2 group font-bold rounded-md shadow-md hover:shadow-lg">
                 Get In Touch <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link to="/services" className="border border-outline px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:border-primary hover:text-primary transition-all flex items-center justify-center">
+              <Link to="/services" className="border border-outline px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:border-primary hover:text-primary transition-all flex items-center justify-center rounded-md">
                 Our Services
               </Link>
             </div>

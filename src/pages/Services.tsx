@@ -95,9 +95,9 @@ export default function Services() {
                   ))}
                 </div>
               </div>
-              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center">
+              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center rounded-md">
                 <p className="font-body-md font-bold mb-4">Need operational improvements that actually stick?</p>
-                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-full shadow-md hover:shadow-lg transition-colors font-bold">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-md shadow-md hover:shadow-lg transition-colors font-bold">
                   Discuss Your Challenge <ArrowRight size={16} />
                 </a>
               </div>
@@ -132,26 +132,26 @@ export default function Services() {
             </div>
             <div className="lg:col-span-5 space-y-8">
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-primary text-white p-6 flex flex-col items-center justify-center text-center aspect-square gap-3 font-bold">
+                <div className="bg-primary text-white p-6 flex flex-col items-center justify-center text-center aspect-square gap-3 font-bold rounded-md">
                   <Compass size={32} />
                   <span>Direction Setting</span>
                 </div>
-                <div className="bg-on-surface text-white p-6 flex flex-col items-center justify-center text-center aspect-square gap-3 font-bold">
+                <div className="bg-on-surface text-white p-6 flex flex-col items-center justify-center text-center aspect-square gap-3 font-bold rounded-md">
                   <Search size={32} />
                   <span>Market Intelligence</span>
                 </div>
-                <div className="bg-surface-container text-on-surface p-6 flex flex-col items-center justify-center text-center aspect-square gap-3 font-bold">
+                <div className="bg-surface-container text-on-surface p-6 flex flex-col items-center justify-center text-center aspect-square gap-3 font-bold rounded-md">
                   <ChartPie size={32} />
                   <span>Scenario Planning</span>
                 </div>
-                <div className="border-2 border-primary text-primary p-6 flex flex-col items-center justify-center text-center aspect-square gap-3 font-bold">
+                <div className="border-2 border-primary text-primary p-6 flex flex-col items-center justify-center text-center aspect-square gap-3 font-bold rounded-md">
                   <Flag size={32} />
                   <span>Execution Roadmap</span>
                 </div>
               </div>
-              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center">
+              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center rounded-md">
                 <p className="font-body-md font-bold mb-4">Looking for strategic clarity on a complex decision?</p>
-                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-full shadow-md hover:shadow-lg transition-colors font-bold">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-md shadow-md hover:shadow-lg transition-colors font-bold ">
                   Speak with an Advisor <ArrowRight size={16} />
                 </a>
               </div>
@@ -185,7 +185,7 @@ export default function Services() {
               </div>
             </div>
             <div className="lg:col-span-5 space-y-8">
-              <div className="bg-surface-white rounded-2xl p-8 border border-outline-variant/50 space-y-6">
+              <div className="bg-surface-white rounded-2xl p-8 border border-outline-variant/50 space-y-12 ">
                 {[
                   { icon: FileText, title: 'Initiation', desc: 'Scope definition, charter, stakeholder mapping' },
                   { icon: Compass, title: 'Planning', desc: 'WBS, scheduling, risk & resource planning' },
@@ -206,9 +206,9 @@ export default function Services() {
                   </div>
                 ))}
               </div>
-              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center">
+              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center rounded-md">
                 <p className="font-body-md font-bold mb-4">Managing a complex programme that needs expert oversight?</p>
-                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-full shadow-md hover:shadow-lg transition-colors font-bold">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-md shadow-md hover:shadow-lg transition-colors font-bold">
                   Get Expert Support <ArrowRight size={16} />
                 </a>
               </div>
@@ -259,9 +259,9 @@ export default function Services() {
                   </div>
                 ))}
               </div>
-              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center">
+              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center rounded-md">
                 <p className="font-body-md font-bold mb-4">Working with government institutions or development programmes?</p>
-                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-full shadow-md hover:shadow-lg transition-colors font-bold">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-md shadow-md hover:shadow-lg transition-colors font-bold">
                   Talk to Our Team <ArrowRight size={16} />
                 </a>
               </div>
@@ -301,15 +301,15 @@ export default function Services() {
                   { num: '30+', label: 'Infrastructure Projects Delivered' },
                   { num: '100%', label: 'Compliance Rate' }
                 ].map(stat => (
-                  <div key={stat.label} className="bg-on-surface text-white p-8 text-center border-b-4 border-primary">
+                  <div key={stat.label} className="bg-surface-white border border-outline-variant/50 p-8 rounded-md text-center">
                     <div className="font-display-lg text-5xl font-bold mb-2 text-primary">{stat.num}</div>
-                    <div className="font-label-md uppercase tracking-widest">{stat.label}</div>
+                    <div className="font-label-md uppercase tracking-widest text-on-surface">{stat.label}</div>
                   </div>
                 ))}
               </div>
-              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center">
+              <div className="bg-primary-container/10 p-12  rounded-md border border-primary/20 text-center">
                 <p className="font-body-md font-bold mb-4">Planning or overseeing a major infrastructure programme?</p>
-                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-full shadow-md hover:shadow-lg transition-colors font-bold">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-md shadow-md hover:shadow-lg transition-colors font-bold">
                   Contact Our Engineers <ArrowRight size={16} />
                 </a>
               </div>
@@ -363,9 +363,9 @@ export default function Services() {
                   ))}
                 </div>
               </div>
-              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center">
+              <div className="bg-primary-container/10 p-8 border border-primary/20 text-center rounded-md">
                 <p className="font-body-md font-bold mb-4">Need an independent, credible asset assessment?</p>
-                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-full shadow-md hover:shadow-lg transition-colors font-bold">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 font-label-md uppercase tracking-widest hover:bg-teal-dark rounded-md shadow-md hover:shadow-lg transition-colors font-bold">
                   Request a Valuation <ArrowRight size={16} />
                 </a>
               </div>
@@ -411,8 +411,8 @@ export default function Services() {
         </section>
 
         {/* Tab Navigation Sticky Strip */}
-        <section className="sticky  hide-scrollbar top-20 z-40 bg-surface-white rounded-2xl border-y border-outline-variant/50 shadow-md overflow-x-auto">
-          <div className="max-w-max-width mx-auto px-margin-desktop min-w-max">
+        <section className="sticky  hide-scrollbar top-20 z-40 bg-surface-white border-y border-outline-variant/50 shadow-md overflow-x-auto">
+          <div className="w-screen mx-auto px-margin-desktop min-w-max">
             <div className="flex justify-between items-stretch">
               {tabs.map((tab) => (
                 <button
@@ -433,7 +433,7 @@ export default function Services() {
         </section>
 
         {/* Tab Content Area */}
-        <section id="services-content" className="py-24 bg-surface-white rounded-2xl min-h-[600px]">
+        <section id="services-content" className="py-24 bg-surface-white min-h-[600px]">
           <div className="max-w-max-width mx-auto px-margin-desktop">
             <AnimatePresence mode="wait">
               {renderServiceContent()}
@@ -449,10 +449,10 @@ export default function Services() {
               Share your challenge — we'll tell you how Steigler can help.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="/contact" className="bg-primary text-on-primary px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:bg-teal-dark rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group">
+              <a href="/contact" className="bg-primary text-on-primary px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:bg-teal-dark rounded-md shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group">
                 Start a Conversation <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="/projects" className="border border-outline px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:border-primary hover:text-primary transition-all flex items-center justify-center">
+              <a href="/projects" className="border border-outline px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest hover:border-primary hover:text-primary transition-all flex items-center justify-center rounded-md">
                 View Our Work
               </a>
             </div>
