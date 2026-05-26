@@ -1,0 +1,294 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#005049",
+                    "surface-container": "#f0edec",
+                    "surface-white": "#FFFFFF",
+                    "primary-fixed-dim": "#5bdacc",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#ebe7e7",
+                    "primary-container": "#00a699",
+                    "surface-tint": "#006a62",
+                    "surface-dim": "#dcd9d9",
+                    "outline": "#6c7a77",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "inverse-surface": "#313030",
+                    "surface": "#fcf9f8",
+                    "on-secondary-container": "#636262",
+                    "on-secondary-fixed-variant": "#464747",
+                    "tertiary": "#984625",
+                    "on-tertiary-fixed": "#380d00",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-surface-variant": "#3c4947",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#551900",
+                    "on-background": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#7a300f",
+                    "secondary-fixed": "#e4e2e2",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-container": "#00332f",
+                    "tertiary-fixed": "#ffdbce",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "teal-dark": "#00958A",
+                    "inverse-primary": "#5bdacc",
+                    "surface-variant": "#e5e2e1",
+                    "primary": "#006a62",
+                    "surface-container-highest": "#e5e2e1",
+                    "outline-variant": "#bbc9c6",
+                    "background": "#fcf9f8",
+                    "on-primary-fixed": "#00201d",
+                    "on-surface": "#1c1b1b",
+                    "secondary": "#5e5e5e",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#db7a54",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#e1dfdf",
+                    "primary-fixed": "#7af7e8",
+                    "surface-bright": "#fcf9f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "max-width": "1280px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .form-input-border {
+            border: none;
+            border-bottom: 1px solid #bbc9c6;
+            transition: border-color 0.2s ease;
+        }
+        .form-input-border:focus {
+            border-bottom: 1px solid #006a62;
+            outline: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+                Steigler Services
+            </div>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-200" href="#">Projects</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary border-b-2 border-primary pb-1" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-3 font-label-lg text-label-lg uppercase tracking-wider hover:bg-teal-dark transition-all duration-200">
+                Get Started
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<!-- Hero Title Section -->
+<section class="mb-20">
+<div class="max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg mb-6 text-on-surface">Connect with Excellence.</h1>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+                    We specialize in strategic consulting that drives measurable institutional growth. Reach out to our advisors to discuss how Steigler Services can optimize your operations.
+                </p>
+</div>
+</section>
+<!-- Main Layout: Contact Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column: Information & Map -->
+<div class="md:col-span-5 space-y-12">
+<!-- Contact Details -->
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="mail">mail</span>
+<div>
+<p class="font-label-lg text-label-lg uppercase text-primary mb-1">Direct Inquiry</p>
+<a class="font-headline-md text-headline-md hover:text-primary transition-colors" href="mailto:info@steiglerservices.com.ng">info@steiglerservices.com.ng</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="location_on">location_on</span>
+<div>
+<p class="font-label-lg text-label-lg uppercase text-primary mb-1">Our Headquarters</p>
+<p class="font-body-lg text-body-lg">
+                                Central Business District, Victoria Island,<br>
+                                Lagos, Nigeria
+                            </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="schedule">schedule</span>
+<div>
+<p class="font-label-lg text-label-lg uppercase text-primary mb-1">Office Hours</p>
+<p class="font-body-lg text-body-lg">Monday – Friday: 08:00 – 18:00 WAT</p>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="aspect-video bg-surface-container-high border border-outline-variant relative overflow-hidden group">
+<img class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500" data-alt="A clean, minimalist high-angle map view of a modern metropolitan business district. The map uses a sophisticated monochrome palette with teal highlights marking significant landmarks. The lighting is bright and even, reflecting a corporate professional aesthetic. The overall mood is precise, organized, and data-driven, consistent with high-end consulting firm brand identities." data-location="Victoria Island, Lagos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-HgjYjz_ktirNMl1gMKrEblX_SOWt0FP7u2UIBqdjL3psqyuZB1WP0sD69H1M3boCoaiFPznqVgoQmA0V1mbXE2ISJ4-htcbhP5pfy8Butqbai1zT0gSe_7hXn8OFyk_QtGN5fyKB-iuH8p8GyemtyTYwb6m9SRSbLV-_ieujUXTTjr91KElhbt4BWH8Bn23-q6rIfB6WHtocyOimOUJrgsXk1VOjwF9F_RCk-D-T8aNwAB2AVEjkd5sJEg6OcFY-c2LXXOjn_Ro">
+<div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors"></div>
+<div class="absolute bottom-4 left-4 bg-surface px-4 py-2 border border-outline-variant font-label-md text-label-md uppercase">
+                        View Interactive Map
+                    </div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="md:col-start-7 md:col-span-6 bg-surface-white border border-outline-variant p-8 md:p-12">
+<form class="space-y-10" id="contact-form">
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg uppercase block text-on-surface-variant" for="full_name">Full Name</label>
+<input class="w-full bg-transparent py-3 font-body-md text-body-md form-input-border" id="full_name" name="full_name" placeholder="Enter your professional name" required="" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg uppercase block text-on-surface-variant" for="email">Corporate Email</label>
+<input class="w-full bg-transparent py-3 font-body-md text-body-md form-input-border" id="email" name="email" placeholder="email@company.com" required="" type="email">
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg uppercase block text-on-surface-variant" for="service">Primary Service Interest</label>
+<select class="w-full bg-transparent py-3 font-body-md text-body-md form-input-border appearance-none cursor-pointer" id="service" name="service">
+<option value="strategic">Strategic Advisory</option>
+<option value="operational">Operational Efficiency</option>
+<option value="tech">Digital Transformation</option>
+<option value="other">Other Consulting Services</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-lg text-label-lg uppercase block text-on-surface-variant" for="message">Engagement Brief</label>
+<textarea class="w-full bg-transparent py-3 font-body-md text-body-md form-input-border resize-none" id="message" name="message" placeholder="How can we assist your organization?" required="" rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary py-5 font-label-lg text-label-lg uppercase tracking-widest hover:bg-teal-dark transition-all duration-300 flex justify-center items-center gap-2 group" type="submit">
+                            Submit Inquiry
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+<div class="hidden mt-8 p-4 bg-primary-container/10 border border-primary text-primary font-label-md text-center uppercase tracking-wide" id="success-message">
+                    Transmission Successful. Our advisors will contact you shortly.
+                </div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-12 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="md:col-span-4">
+<div class="font-headline-md text-headline-md text-on-surface mb-4">Steigler Services</div>
+<p class="font-body-md text-body-md text-on-secondary-container max-w-xs">
+                    Architecting the future of corporate performance through precision and intelligence.
+                </p>
+</div>
+<div class="md:col-span-2 md:col-start-7">
+<h4 class="font-label-lg text-label-lg uppercase text-primary mb-6">Navigation</h4>
+<ul class="space-y-4 font-body-md text-body-md text-on-secondary-container">
+<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Projects</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-label-lg uppercase text-primary mb-6">Support</h4>
+<ul class="space-y-4 font-body-md text-body-md text-on-secondary-container">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-label-lg uppercase text-primary mb-6">Contact</h4>
+<p class="font-body-md text-body-md text-on-secondary-container">
+                    info@steiglerservices.com.ng
+                </p>
+</div>
+<div class="md:col-span-12 pt-12 mt-12 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-secondary-container text-sm">
+                    © 2024 Steigler Services. All rights reserved.
+                </p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer transition-colors" data-icon="share">share</span>
+<span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer transition-colors" data-icon="language">language</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const success = document.getElementById('success-message');
+            
+            // Basic animation for feedback
+            form.style.opacity = '0.5';
+            form.style.pointerEvents = 'none';
+            
+            setTimeout(() => {
+                form.classList.add('hidden');
+                success.classList.remove('hidden');
+            }, 800);
+        });
+
+        // Add subtle interaction effect to inputs
+        const inputs = document.querySelectorAll('.form-input-border');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.previousElementSibling.classList.add('text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.previousElementSibling.classList.remove('text-primary');
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,456 @@
+/* =========================================
+   ABOUT PAGE — Specific Styles
+   ========================================= */
+
+/* --- Overview --- */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.overview-left p { color: var(--text-body); line-height: 1.8; }
+
+.overview-stats-block {
+  background: var(--gray-light);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.os-item {
+  padding: 24px 0;
+}
+
+.os-item:first-child { padding-top: 0; }
+.os-item:last-child  { padding-bottom: 0; }
+
+.os-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--teal);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.os-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--black);
+  margin: 4px 0 8px;
+}
+
+.os-item p {
+  font-size: 0.88rem;
+  color: var(--gray-mid);
+  line-height: 1.6;
+}
+
+.os-divider {
+  height: 1px;
+  background: var(--gray-border);
+}
+
+/* --- Vision & Mission --- */
+.vm-section {
+  background: linear-gradient(135deg, #f8fffe, #f0fdf9);
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.vm-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  border: 1px solid var(--gray-border);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.vm-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--teal), var(--teal-dark));
+}
+
+.vm-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.vm-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--teal-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--teal);
+  margin-bottom: 24px;
+}
+
+.vm-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.vm-card p {
+  color: var(--gray-mid);
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.vm-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vm-points li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-body);
+}
+
+.vm-points li i {
+  color: var(--teal);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* --- Values --- */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.value-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 36px;
+  border: 1px solid var(--gray-border);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--teal);
+  transform: scaleX(0);
+  transition: transform 0.35s ease;
+  transform-origin: left;
+}
+
+.value-card:hover::after {
+  transform: scaleX(1);
+}
+
+.value-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.value-number {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--teal-light);
+  letter-spacing: -0.05em;
+  line-height: 1;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.value-card:hover .value-number {
+  color: rgba(0,166,153,0.15);
+}
+
+.value-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--teal-light);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--teal);
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.value-card:hover .value-icon {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.value-card h3 { margin-bottom: 10px; font-size: 1.1rem; }
+.value-card p  { font-size: 0.9rem; color: var(--gray-mid); line-height: 1.7; }
+
+/* --- Timeline --- */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.timeline-track {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--teal), rgba(0,166,153,0.1));
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.timeline-item.left {
+  flex-direction: row;
+  padding-right: calc(50% + 40px);
+}
+
+.timeline-item.right {
+  flex-direction: row-reverse;
+  padding-left: calc(50% + 40px);
+}
+
+.tl-dot {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background: var(--teal);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 4px rgba(0,166,153,0.15);
+  z-index: 2;
+}
+
+.tl-card {
+  background: var(--white);
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  width: 100%;
+}
+
+.tl-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.tl-card-present {
+  border-color: var(--teal);
+  background: linear-gradient(135deg, #f8fffe, #f0fdf9);
+}
+
+.tl-year {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--teal);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  background: var(--teal-light);
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+.tl-year-now {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.tl-card h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.tl-card p {
+  font-size: 0.88rem;
+  color: var(--gray-mid);
+  line-height: 1.6;
+}
+
+/* --- Philosophy --- */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.philosophy-left p {
+  color: var(--text-body);
+  line-height: 1.8;
+}
+
+.philosophy-quote {
+  margin-top: 28px;
+  padding: 20px 24px;
+  border-left: 4px solid var(--teal);
+  background: var(--teal-light);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.philosophy-quote p {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--black);
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.philosophy-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.phil-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--white);
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: var(--transition);
+}
+
+.phil-card:hover {
+  border-color: var(--teal);
+  box-shadow: var(--shadow-sm);
+  transform: translateX(4px);
+}
+
+.phil-card > i {
+  width: 44px;
+  height: 44px;
+  background: var(--teal-light);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+
+.phil-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.phil-card p {
+  font-size: 0.87rem;
+  color: var(--gray-mid);
+  line-height: 1.6;
+}
+
+/* CTA — reuse from home */
+.cta-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  padding: 52px 60px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 48px rgba(0,166,153,0.3);
+  flex-wrap: wrap;
+}
+
+.cta-text h2 { color: var(--white); font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom: 8px; }
+.cta-text p  { color: rgba(255,255,255,0.8); }
+
+.cta-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.btn-outline-cta {
+  background: rgba(255,255,255,0.12);
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.4);
+  padding: 14px 32px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-outline-cta:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .overview-grid     { grid-template-columns: 1fr; gap: 48px; }
+  .values-grid       { grid-template-columns: repeat(2, 1fr); }
+  .philosophy-grid   { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: 768px) {
+  .vm-grid           { grid-template-columns: 1fr; }
+  .values-grid       { grid-template-columns: 1fr; }
+  .timeline-item.left,
+  .timeline-item.right { padding: 0 0 0 60px; flex-direction: row; }
+  .timeline-track    { left: 24px; }
+  .tl-dot            { left: 24px; }
+  .cta-inner         { padding: 36px 28px; flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .vm-card           { padding: 28px; }
+  .timeline-item.left,
+  .timeline-item.right { padding-left: 48px; }
+}

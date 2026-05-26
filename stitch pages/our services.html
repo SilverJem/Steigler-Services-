@@ -1,0 +1,391 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Services | Steigler Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#005049",
+                    "surface-container": "#f0edec",
+                    "surface-white": "#FFFFFF",
+                    "primary-fixed-dim": "#5bdacc",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#ebe7e7",
+                    "primary-container": "#00a699",
+                    "surface-tint": "#006a62",
+                    "surface-dim": "#dcd9d9",
+                    "outline": "#6c7a77",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "inverse-surface": "#313030",
+                    "surface": "#fcf9f8",
+                    "on-secondary-container": "#636262",
+                    "on-secondary-fixed-variant": "#464747",
+                    "tertiary": "#984625",
+                    "on-tertiary-fixed": "#380d00",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-surface-variant": "#3c4947",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#551900",
+                    "on-background": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#7a300f",
+                    "secondary-fixed": "#e4e2e2",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-container": "#00332f",
+                    "tertiary-fixed": "#ffdbce",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "teal-dark": "#00958A",
+                    "inverse-primary": "#5bdacc",
+                    "surface-variant": "#e5e2e1",
+                    "primary": "#006a62",
+                    "surface-container-highest": "#e5e2e1",
+                    "outline-variant": "#bbc9c6",
+                    "background": "#fcf9f8",
+                    "on-primary-fixed": "#00201d",
+                    "on-surface": "#1c1b1b",
+                    "secondary": "#5e5e5e",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#db7a54",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#e1dfdf",
+                    "primary-fixed": "#7af7e8",
+                    "surface-bright": "#fcf9f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "max-width": "1280px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .service-card:hover .service-icon {
+            color: #00a699;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface dark:bg-on-background border-b border-outline-variant dark:border-outline flat no shadows">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+                Steigler Services
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">About</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1" href="#">Services</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Projects</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-3 font-label-lg uppercase tracking-wider hover:bg-teal-dark transition-all">
+                Get Started
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-40 pb-24 px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-8">Comprehensive Consulting Solutions.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    We deliver intellectual rigor and strategic depth to solve complex organizational challenges across private and public sectors.
+                </p>
+</div>
+</div>
+</header>
+<!-- Services Bento Grid -->
+<main class="pb-24 px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Business & Management Consulting -->
+<section class="md:col-span-6 bg-surface-container-lowest border border-outline-variant p-8 service-card transition-all">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 service-icon transition-colors">business_center</span>
+<h2 class="font-headline-lg text-headline-lg mb-4">Business &amp; Management Consulting</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Streamlining operations and optimizing organizational structures to drive sustainable growth and operational excellence in competitive markets.
+                    </p>
+<div class="mt-auto">
+<h3 class="font-label-lg text-label-lg uppercase text-primary mb-4">Value Delivered</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Increased operational efficiency through process re-engineering.
+                            </li>
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Enhanced leadership capabilities and talent alignment.
+                            </li>
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Data-driven decision frameworks for executive management.
+                            </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Strategic Advisory -->
+<section class="md:col-span-6 bg-surface-container-lowest border border-outline-variant p-8 service-card transition-all">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 service-icon transition-colors">insights</span>
+<h2 class="font-headline-lg text-headline-lg mb-4">Strategic Advisory</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Navigating market complexities with high-level foresight, risk assessment, and long-term positioning strategies for global enterprises.
+                    </p>
+<div class="mt-auto">
+<h3 class="font-label-lg text-label-lg uppercase text-primary mb-4">Value Delivered</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Robust market entry and expansion roadmaps.
+                            </li>
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Comprehensive risk mitigation and resilience planning.
+                            </li>
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Competitive advantage through unique value proposition design.
+                            </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Public Sector Consulting -->
+<section class="md:col-span-4 bg-surface-container-lowest border border-outline-variant p-8 service-card transition-all">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 service-icon transition-colors">account_balance</span>
+<h2 class="font-headline-md text-headline-md mb-4">Public Sector Consulting</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Modernizing governance and public service delivery through policy analysis and digital transformation initiatives.
+                    </p>
+<div class="mt-auto">
+<h3 class="font-label-lg text-label-lg uppercase text-primary mb-4">Value Delivered</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Improved public engagement and service transparency.
+                            </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Project Management -->
+<section class="md:col-span-4 bg-surface-container-lowest border border-outline-variant p-8 service-card transition-all">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 service-icon transition-colors">account_tree</span>
+<h2 class="font-headline-md text-headline-md mb-4">Project Management</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Rigorous execution oversight for complex, multi-stakeholder projects ensuring delivery on time, scope, and budget.
+                    </p>
+<div class="mt-auto">
+<h3 class="font-label-lg text-label-lg uppercase text-primary mb-4">Value Delivered</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Precision in resource allocation and timeline management.
+                            </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Asset Valuation -->
+<section class="md:col-span-4 bg-surface-container-lowest border border-outline-variant p-8 service-card transition-all">
+<div class="flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 service-icon transition-colors">calculate</span>
+<h2 class="font-headline-md text-headline-md mb-4">Asset Valuation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Technical precision in assessing tangible and intangible assets for mergers, acquisitions, and reporting.
+                    </p>
+<div class="mt-auto">
+<h3 class="font-label-lg text-label-lg uppercase text-primary mb-4">Value Delivered</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                Accurate, defensible valuation reports for stakeholders.
+                            </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Infrastructure & Civil Engineering -->
+<section class="md:col-span-12 relative overflow-hidden bg-surface-container border border-outline-variant group">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="p-12 z-10 bg-surface-container">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">engineering</span>
+<h2 class="font-headline-lg text-headline-lg mb-4">Infrastructure &amp; Civil Engineering</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                            Our engineering division combines architectural vision with structural integrity to build the foundations of the future. From urban planning to large-scale civil works, we deliver technical excellence.
+                        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div>
+<h3 class="font-label-lg text-label-lg uppercase text-primary mb-4">Value Delivered</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                        Sustainable and resilient structural designs.
+                                    </li>
+<li class="flex items-start gap-3 font-body-md text-body-md">
+<span class="w-2 h-2 mt-2 bg-primary flex-shrink-0"></span>
+                                        End-to-end feasibility and impact assessments.
+                                    </li>
+</ul>
+</div>
+<div class="flex items-center">
+<button class="border border-on-surface px-8 py-4 font-label-lg uppercase tracking-wider hover:bg-on-surface hover:text-surface transition-all">
+                                    View Civil Projects
+                                </button>
+</div>
+</div>
+</div>
+<div class="relative h-64 md:h-full overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated architectural visualization of a modern infrastructure project featuring clean concrete lines, glass surfaces, and a minimalist bridge design. The lighting is crisp, midday sun casting sharp geometric shadows, reflecting a professional civil engineering atmosphere with a teal and slate gray color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOoFPHz07d6EFvfp5ooA6QPUggnLTTxvvV_Hy3Gnlp4AvZcJncu2Nw0um5674xdTygTdiLNU8X4sqcK2iZ36zdR8wf4nSCbYN8xY3GoIOuECscSXGLcuKkWLMwvJw4S0iHLEoNF1-kABwhQIEwe6Dil6Yh9I0n296_MaFSZNoJyST357tJ9mwlbe5bSpxKGn31StMN3KdMk0XQxOfY-ueITfEWc27LbsQU9uUshxrNv3qY3nHWwt_A1fyOmwCr3JJJgQhBL-XRUWc">
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Detailed Methodology Section -->
+<section class="bg-surface-container-low py-24 border-t border-outline-variant">
+<div class="px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Our Rigorous Approach</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">The Steigler Method is built on analytical precision and geometric clarity.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="border-l-4 border-primary pl-6 py-4">
+<span class="font-display-lg text-headline-lg text-primary block mb-2">01</span>
+<h3 class="font-label-lg text-label-lg uppercase mb-2">Audit &amp; Diagnose</h3>
+<p class="font-caption text-caption text-on-secondary-container">Deep dive into current state metrics and organizational bottlenecks.</p>
+</div>
+<div class="border-l-4 border-primary pl-6 py-4">
+<span class="font-display-lg text-headline-lg text-primary block mb-2">02</span>
+<h3 class="font-label-lg text-label-lg uppercase mb-2">Strategic Modeling</h3>
+<p class="font-caption text-caption text-on-secondary-container">Building predictive models and scenario planning for future states.</p>
+</div>
+<div class="border-l-4 border-primary pl-6 py-4">
+<span class="font-display-lg text-headline-lg text-primary block mb-2">03</span>
+<h3 class="font-label-lg text-label-lg uppercase mb-2">Pilot Execution</h3>
+<p class="font-caption text-caption text-on-secondary-container">Controlled implementation of recommended strategies to validate ROI.</p>
+</div>
+<div class="border-l-4 border-primary pl-6 py-4">
+<span class="font-display-lg text-headline-lg text-primary block mb-2">04</span>
+<h3 class="font-label-lg text-label-lg uppercase mb-2">Scale &amp; Sustain</h3>
+<p class="font-caption text-caption text-on-secondary-container">Full-scale rollout with ongoing monitoring and knowledge transfer.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-12 px-margin-desktop max-w-max-width mx-auto">
+<div class="md:col-span-4">
+<div class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-6">
+                    Steigler Services
+                </div>
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-secondary-fixed-dim max-w-xs">
+                    Engineering Excellence. Consulting for the next generation of industry leaders.
+                </p>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-label-lg uppercase text-primary mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Projects</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="font-label-lg text-label-lg uppercase text-primary mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container dark:text-secondary-fixed-dim hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="font-label-lg text-label-lg uppercase text-primary mb-6">Contact</h4>
+<a class="font-body-md text-body-md text-on-secondary-container dark:text-secondary-fixed-dim hover:text-primary transition-colors block" href="mailto:info@steiglerservices.com.ng">
+                    info@steiglerservices.com.ng
+                </a>
+</div>
+<div class="md:col-span-12 pt-12 mt-12 border-t border-outline-variant">
+<p class="font-body-md text-body-md text-on-secondary-container dark:text-secondary-fixed-dim text-center">
+                    © 2024 Steigler Services. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle scroll reveal effect
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.9) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize state
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            });
+            // Instant show first ones
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body></html>

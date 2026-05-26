@@ -1,0 +1,372 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Steigler Services | Strategic Infrastructure Consulting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#005049",
+                    "surface-container": "#f0edec",
+                    "surface-white": "#FFFFFF",
+                    "primary-fixed-dim": "#5bdacc",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#ebe7e7",
+                    "primary-container": "#00a699",
+                    "surface-tint": "#006a62",
+                    "surface-dim": "#dcd9d9",
+                    "outline": "#6c7a77",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "inverse-surface": "#313030",
+                    "surface": "#fcf9f8",
+                    "on-secondary-container": "#636262",
+                    "on-secondary-fixed-variant": "#464747",
+                    "tertiary": "#984625",
+                    "on-tertiary-fixed": "#380d00",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "on-surface-variant": "#3c4947",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#551900",
+                    "on-background": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#7a300f",
+                    "secondary-fixed": "#e4e2e2",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary-container": "#00332f",
+                    "tertiary-fixed": "#ffdbce",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "teal-dark": "#00958A",
+                    "inverse-primary": "#5bdacc",
+                    "surface-variant": "#e5e2e1",
+                    "primary": "#006a62",
+                    "surface-container-highest": "#e5e2e1",
+                    "outline-variant": "#bbc9c6",
+                    "background": "#fcf9f8",
+                    "on-primary-fixed": "#00201d",
+                    "on-surface": "#1c1b1b",
+                    "secondary": "#5e5e5e",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#db7a54",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#e1dfdf",
+                    "primary-fixed": "#7af7e8",
+                    "surface-bright": "#fcf9f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "max-width": "1280px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcf9f8;
+            color: #1c1b1b;
+        }
+        .bauhaus-grid {
+            background-image: linear-gradient(#e5e2e1 1px, transparent 1px), linear-gradient(90deg, #e5e2e1 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">Steigler Services</div>
+<div class="hidden md:flex space-x-8 items-center h-full">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">About</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Projects</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-8 py-3 font-label-lg uppercase tracking-wider hover:bg-teal-dark transition-all duration-200">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden min-h-[819px] flex items-center bauhaus-grid">
+<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter py-24 relative z-10">
+<div class="md:col-span-8 flex flex-col justify-center">
+<div class="bg-primary w-16 h-2 mb-8"></div>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6">
+                        Strategic Solutions for Complex Infrastructure
+                    </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mb-12">
+                        Leading engineering and consulting services designed to optimize high-stakes operations through intellectual rigor and data-driven precision.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-teal-dark transition-all">
+                            Our Services
+                        </button>
+<button class="border border-secondary text-secondary px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-surface-container transition-all">
+                            Learn More
+                        </button>
+</div>
+</div>
+<div class="md:col-span-4 hidden md:flex items-center justify-end">
+<div class="relative w-full aspect-square border border-outline p-4 bg-surface">
+<img alt="Modern corporate architecture" class="w-full h-full object-cover grayscale contrast-125" data-alt="A striking architectural photograph of a modern high-rise office building with sharp, geometric glass and steel facets. The perspective is looking upwards towards a bright, clear sky, emphasizing verticality and precision. The visual style is high-end corporate minimalism with a high-contrast black and white aesthetic, reflecting a sense of stability and intellectual rigor. Soft daylight illuminates the structure, creating clean lines and subtle tonal shifts on the glass surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEbJGg7OQajEdo5UJp7bN6SjTF3j60xDNanqN3b58cxc9RmR4U-XWtGA6ESl4uw4AbICRe8sNTmrdnKTh5jWT346LChSDzxW3iPYN2oOYbgnkMaHoTDc1cwZpY9525HdMFXRIRqxJAXqPuVi2tdhAzyq_4GsQDzQ-9ZHesvVdqjXHT5SpsZIRntgUEZ4XP2_MVdsbjXWqa8x0O0l6tWHAOjffCcVtfdcrA5yesW8-BEWft45xXaTXgYsnTbKgdXlaGVv2gu3-Jk6Q">
+<div class="absolute -bottom-8 -left-8 bg-primary-container p-8 text-on-primary shadow-none">
+<span class="block text-4xl font-bold">10+</span>
+<span class="block font-label-lg uppercase">Years of Excellence</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Indicators & Metrics -->
+<section class="bg-surface-container-low py-20 border-y border-outline-variant">
+<div class="max-w-max-width mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="border-l-4 border-primary pl-6">
+<span class="font-display-lg text-display-lg block text-on-surface">100%</span>
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-secondary">Problem Solving Efficiency</span>
+<div class="mt-4 w-full bg-outline-variant h-px">
+<div class="bg-primary h-px w-full"></div>
+</div>
+</div>
+<div class="border-l-4 border-primary pl-6">
+<span class="font-display-lg text-display-lg block text-on-surface">90%</span>
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-secondary">Operational Monitoring</span>
+<div class="mt-4 w-full bg-outline-variant h-px">
+<div class="bg-primary h-px w-[90%]"></div>
+</div>
+</div>
+<div class="flex items-center">
+<p class="font-body-md text-body-md text-secondary">
+                        Our metrics reflect a decade of commitment to institutional stability and engineering precision in complex environments.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary mb-4 block">Capabilities</span>
+<h2 class="font-headline-lg text-headline-lg">Expertise for Global Industry</h2>
+</div>
+<div class="hidden md:block w-32 h-px bg-outline-variant mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="border border-outline-variant p-10 hover:border-primary transition-colors group cursor-pointer bg-surface-white">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Infrastructure Design</h3>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                            Mathematical modeling and structural integrity analysis for large-scale urban development projects.
+                        </p>
+<div class="flex items-center text-primary font-label-lg uppercase tracking-widest group-hover:gap-4 transition-all">
+                            Explore <span class="material-symbols-outlined ml-2" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="border border-outline-variant p-10 hover:border-primary transition-colors group cursor-pointer bg-surface-white">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="monitoring">monitoring</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Operational Analytics</h3>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                            Leveraging data-driven insights to streamline complex logistics and supply chain infrastructures.
+                        </p>
+<div class="flex items-center text-primary font-label-lg uppercase tracking-widest group-hover:gap-4 transition-all">
+                            Explore <span class="material-symbols-outlined ml-2" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="border border-outline-variant p-10 hover:border-primary transition-colors group cursor-pointer bg-surface-white">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="strategy">strategy</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Consulting Services</h3>
+<p class="font-body-md text-body-md text-secondary mb-8">
+                            Strategic roadmaps and risk management for institutional stakeholders and corporate leaders.
+                        </p>
+<div class="flex items-center text-primary font-label-lg uppercase tracking-widest group-hover:gap-4 transition-all">
+                            Explore <span class="material-symbols-outlined ml-2" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects (Asymmetric Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="mb-16 border-b border-outline-variant pb-8">
+<h2 class="font-headline-lg text-headline-lg mb-2">Featured Projects</h2>
+<p class="font-body-md text-body-md text-secondary">A selection of our recent architectural and engineering triumphs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-7 group relative overflow-hidden">
+<img alt="Modern corporate hub" class="w-full aspect-video object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="An expansive view of a minimalist corporate lobby featuring a high-contrast design of polished concrete floors and dark wood accents. The lighting is diffused and atmospheric, highlighting the clean architectural lines of the space. The environment feels professional, quiet, and highly focused, with a single teal architectural detail providing a pop of brand color. The overall mood is one of sophisticated corporate excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH2TfqhAKXiLVGwWKZhvvJ-JJgbT9vM3clWf1fgFyL5m6t3XYICnfxyqB5hwHhlin_ZVL3pG8yi2aCX3MaTPkjoysN4KqtiL-prZbJ7yrixwIHF0qBMBYYTZW5-ixso3Vl41phUvKg2V4vmi9TrhKPno2AfEUI1FhRz1X5pCTY1MRPcvgRHW2vnB3K-vzHJihyJv4Olih2L6pT_QNO_CU0SYQBJuj8NNwBxnyla9E6jSU2savvIQaZEXtZT1YoxoVUvxresJ4idxY">
+<div class="absolute bottom-0 left-0 bg-surface p-8 max-w-sm transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Urban Development</span>
+<h4 class="font-headline-md text-headline-md mt-2">The Apex Corporate Hub</h4>
+</div>
+</div>
+<div class="md:col-span-5 grid grid-rows-2 gap-gutter">
+<div class="group relative overflow-hidden">
+<img alt="Infrastructure site" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="A detailed shot of a large-scale infrastructure construction site at dusk. The scene is illuminated by industrial floodlights, creating deep shadows and bright, sharp highlights on steel girders and concrete foundations. The visual style is gritty yet precise, emphasizing the engineering complexity of the project. The color palette is dominated by cool blues and warm amber light, aligned with a professional, data-driven aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAci3GkJGOqpfgw33oIh33HsXJH02u-e-zD79IqMUwlNhwcCLGQywvJqGM6PMeZAkt4LCZczNTesjeDj-Tjn7BRmWhF4tTVuQuZ0AfTN-MbzJHKATuYYW2WcusBFYsAsn2O6FCpfBg3DKIjwlYa_De1QD-13Bz7tMUvArt0aX2taVxox3gYGQiX1xhjvgDPW9uGy392Qoudi2ReKlvhaQ1VSC5_XD5ToLngaS1JulAE33dNaIkoBgfnvJ3Lbt6d8ITABzWdZlIJ6IE">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="group relative overflow-hidden">
+<img alt="Data center" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="A symmetrical, perspective view of a clean, brightly lit data center hallway. Rows of sleek server racks line the sides, with glowing teal LED indicators creating a sense of constant activity and monitoring. The lighting is sterile and high-key, reinforcing a minimalist, Bauhaus-inspired aesthetic. The scene communicates high-level technical precision and operational stability through its rigorous geometric composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChsSQP98ArLb4qYVKoHxdQmIbS5ZYikFV52IPTfY74EjF_DLxnEHqFZ-0o0MKp3pjmzCEKHqVc79-npkDaQmdOophHDRLRr78A75BVM7Z3lXWuHzFLQDCbWVTIYNoIsFdUddmx5MpGsCJE6G0bKjCh2a5QwNpaKdDuD4cIiq4wi9dEgKOeYetY643Cj8oGem3hi0EEn5rUkbuAFkmg1kptxjwQjZXBy4tAA64JldQ4R8c58jNOA_aKh7U1aBD1qyNnYloVFkXWIJQ">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-primary text-on-primary">
+<div class="max-w-3xl mx-auto px-margin-desktop text-center">
+<h2 class="font-display-lg text-display-lg mb-8 leading-tight">Ready to optimize your operations?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-12">
+                    Partner with Steigler Services to bring precision, efficiency, and stability to your most complex infrastructure challenges.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-surface-white text-primary px-12 py-5 font-label-lg uppercase tracking-[0.2em] hover:bg-surface-container transition-all">
+                        Schedule Consultation
+                    </button>
+<button class="border border-surface-white text-surface-white px-12 py-5 font-label-lg uppercase tracking-[0.2em] hover:bg-on-primary-fixed-variant transition-all">
+                        View Portfolio
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter py-20 px-margin-desktop max-w-max-width mx-auto">
+<div class="md:col-span-5">
+<div class="font-headline-md text-headline-md text-on-surface mb-6">Steigler Services</div>
+<p class="font-body-md text-body-md text-secondary max-w-sm mb-8">
+                    Defining the standard for high-end corporate consulting and engineering through a commitment to Bauhaus principles and data-driven excellence.
+                </p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary mb-6">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">Services</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">Projects</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h4 class="font-label-lg text-label-lg uppercase tracking-wider text-primary mb-6">Contact</h4>
+<ul class="space-y-4">
+<li class="font-body-md text-body-md text-on-secondary-container">info@steiglerservices.com.ng</li>
+<li class="font-body-md text-body-md text-on-secondary-container">+234 (0) 800-STEIGLER</li>
+<li class="font-body-md text-body-md text-on-secondary-container">12 Admiralty Way, Lekki, Lagos</li>
+</ul>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-margin-desktop py-8 border-t border-outline-variant flex justify-between items-center font-caption text-caption text-secondary">
+<span>© 2024 Steigler Services. All rights reserved.</span>
+<div class="flex gap-8">
+<a class="hover:text-primary transition-colors" href="#">Sitemap</a>
+<a class="hover:text-primary transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for navigation scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+
+        // Simple Fade-in Observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>

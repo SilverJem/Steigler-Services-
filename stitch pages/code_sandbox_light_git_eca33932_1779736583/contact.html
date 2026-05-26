@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Steigler Services</title>
+  <meta name="description" content="Contact Steigler Services to discuss your consulting or engineering challenge. We're ready to listen." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="transparent">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+          <div class="logo-icon">S</div>
+          Steigler Services
+        </a>
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li class="navbar-cta"><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
+        </ul>
+        <button class="navbar-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero contact-hero">
+    <div class="container">
+      <p class="page-hero-label">Get In Touch</p>
+      <h1 class="fade-up">Let's Start a<br />Conversation</h1>
+      <p class="fade-up delay-1">
+        Tell us about your challenge. Whether it's a quick question or a
+        complex programme — we're ready to listen and respond.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- CONTACT MAIN -->
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form Side -->
+        <div class="contact-form-side fade-up">
+          <div class="form-card">
+            <h3>Send Us a Message</h3>
+            <p class="form-sub">We typically respond within 24 business hours.</p>
+
+            <!-- Success message (hidden by default) -->
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Message received!</strong>
+                <p>We'll get back to you within 24 business hours.</p>
+              </div>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name <span class="req">*</span></label>
+                  <input type="text" id="firstName" name="firstName" placeholder="John" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name <span class="req">*</span></label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="john.doe@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="organisation">Organisation / Company</label>
+                <input type="text" id="organisation" name="organisation" placeholder="Your organisation name" />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Area of Interest</label>
+                <div class="select-wrapper">
+                  <select id="service" name="service">
+                    <option value="" disabled selected>Select a service area...</option>
+                    <option value="business">Business &amp; Management Consulting</option>
+                    <option value="strategy">Strategic Advisory</option>
+                    <option value="pm">Project &amp; Programme Management</option>
+                    <option value="public">Public Sector Consulting</option>
+                    <option value="infra">Infrastructure &amp; Civil Engineering</option>
+                    <option value="valuation">Asset Valuation &amp; Due Diligence</option>
+                    <option value="other">Other / Not Sure</option>
+                  </select>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="req">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Briefly describe your challenge or what you'd like to discuss..." required></textarea>
+              </div>
+
+              <div class="form-group form-check">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="consent" name="consent" required />
+                  <span class="checkmark"></span>
+                  I agree to Steigler Services processing my data to respond to this enquiry.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Info Side -->
+        <div class="contact-info-side fade-up delay-2">
+
+          <div class="contact-info-block">
+            <h4>Direct Contact</h4>
+            <div class="ci-item">
+              <div class="ci-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="ci-content">
+                <span class="ci-label">Email</span>
+                <a href="mailto:info@steiglerservices.com.ng" class="ci-value">
+                  info@steiglerservices.com.ng
+                </a>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="ci-content">
+                <span class="ci-label">Office Hours</span>
+                <span class="ci-value">Monday – Friday<br />8:00 AM – 6:00 PM (WAT)</span>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="ci-content">
+                <span class="ci-label">Operating Regions</span>
+                <span class="ci-value">Africa · Middle East · Europe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <h4>Follow Us</h4>
+            <div class="social-row">
+              <a href="#" class="social-card" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-card" aria-label="Twitter / X">
+                <i class="fab fa-x-twitter"></i>
+                <span>Twitter / X</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info-block promise-block">
+            <div class="promise-header">
+              <i class="fas fa-handshake"></i>
+              <h4>Our Commitment</h4>
+            </div>
+            <ul class="promise-list">
+              <li><i class="fas fa-check"></i> Respond within 24 business hours</li>
+              <li><i class="fas fa-check"></i> Assigned a senior consultant directly</li>
+              <li><i class="fas fa-check"></i> Free initial discovery call</li>
+              <li><i class="fas fa-check"></i> No obligation — just a conversation</li>
+            </ul>
+          </div>
+
+          <div class="contact-info-block services-quick">
+            <h4>How Can We Help?</h4>
+            <div class="sq-links">
+              <a href="services.html#business">
+                <i class="fas fa-chart-pie"></i>
+                <span>Business Consulting</span>
+                <i class="fas fa-arrow-right sq-arrow"></i>
+              </a>
+              <a href="services.html#strategy">
+                <i class="fas fa-compass"></i>
+                <span>Strategic Advisory</span>
+                <i class="fas fa-arrow-right sq-arrow"></i>
+              </a>
+              <a href="services.html#pm">
+                <i class="fas fa-project-diagram"></i>
+                <span>Project Management</span>
+                <i class="fas fa-arrow-right sq-arrow"></i>
+              </a>
+              <a href="services.html#infra">
+                <i class="fas fa-hard-hat"></i>
+                <span>Infrastructure</span>
+                <i class="fas fa-arrow-right sq-arrow"></i>
+              </a>
+              <a href="services.html#valuation">
+                <i class="fas fa-search-dollar"></i>
+                <span>Asset Valuation</span>
+                <i class="fas fa-arrow-right sq-arrow"></i>
+              </a>
+              <a href="services.html#public">
+                <i class="fas fa-landmark"></i>
+                <span>Public Sector</span>
+                <i class="fas fa-arrow-right sq-arrow"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ SECTION -->
+  <section class="section faq-section" style="background: var(--gray-light);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Common Questions</span>
+        <h2 class="section-title fade-up">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item fade-up">
+          <button class="faq-q" aria-expanded="false">
+            <span>How long does a typical engagement take?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Engagement length depends entirely on scope. Quick advisory assignments can be completed in 2–4 weeks. Comprehensive consulting projects typically run 3–6 months, while large infrastructure programmes can span 12–24 months or more. We tailor every engagement to your specific needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up delay-1">
+          <button class="faq-q" aria-expanded="false">
+            <span>Do you work with both public and private sector clients?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes — this dual capability is one of Steigler's core strengths. We understand the distinct requirements, governance frameworks, and stakeholder dynamics of both sectors, and we apply that knowledge to every engagement.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up delay-2">
+          <button class="faq-q" aria-expanded="false">
+            <span>What regions do you operate in?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Our primary markets are across Africa (with deep expertise in West and East Africa) and the Middle East. We also support clients with operations in Europe. Our team combines strong local knowledge with international experience.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up">
+          <button class="faq-q" aria-expanded="false">
+            <span>How do you price your services?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>We offer flexible fee structures including fixed-fee, time-and-materials, and retainer models — depending on the nature of the engagement. We provide clear, transparent proposals with no hidden costs. Pricing is discussed during the initial discovery call.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up delay-1">
+          <button class="faq-q" aria-expanded="false">
+            <span>What makes Steigler different from larger consulting firms?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>We combine deep technical and strategic expertise with the agility of a focused firm. You work directly with senior consultants — not junior analysts. And crucially, we stay engaged through execution, not just strategy, ensuring your outcomes are actually delivered.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-up delay-2">
+          <button class="faq-q" aria-expanded="false">
+            <span>Can you handle sole-source or competitive bid engagements?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes. We regularly participate in both competitive tender processes and sole-source advisory mandates. Our team is experienced in public procurement processes, expression of interest responses, and technical proposal preparation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo">
+            <div class="logo-icon">S</div>
+            Steigler Services
+          </a>
+          <p>Delivering value-driven, high-impact consulting and engineering services across Africa, the Middle East, and Europe.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#vision">Vision &amp; Mission</a></li>
+            <li><a href="projects.html">Case Studies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#business">Business Consulting</a></li>
+            <li><a href="services.html#strategy">Strategic Advisory</a></li>
+            <li><a href="services.html#pm">Project Management</a></li>
+            <li><a href="services.html#infra">Infrastructure</a></li>
+            <li><a href="services.html#valuation">Asset Valuation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@steiglerservices.com.ng">info@steiglerservices.com.ng</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-globe"></i>
+            <span>Africa · Middle East · Europe</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon–Fri, 8:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Steigler Services. All rights reserved.</p>
+        <p>Business &amp; Management Consulting | Engineering &amp; Infrastructure</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Steigler Services</title>
+  <meta name="description" content="Explore Steigler Services' project portfolio — case studies across infrastructure, business consulting, public sector advisory, and strategic engagements." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" class="transparent">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+          <div class="logo-icon">S</div>
+          Steigler Services
+        </a>
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="navbar-cta"><a href="contact.html" class="btn btn-primary">Get in Touch</a></li>
+        </ul>
+        <button class="navbar-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-hero-label">Our Portfolio</p>
+      <h1 class="fade-up">Proven Delivery.<br />Real-World Impact.</h1>
+      <p class="fade-up delay-1">
+        A selection of engagements that demonstrate the depth of our expertise
+        and our unwavering commitment to measurable outcomes.
+      </p>
+
+      <div class="hero-project-stats fade-up delay-2">
+        <div class="hps-item">
+          <span data-count="150" data-suffix="+">0+</span>
+          <p>Projects Completed</p>
+        </div>
+        <div class="hps-divider"></div>
+        <div class="hps-item">
+          <span data-count="10" data-suffix="+">0+</span>
+          <p>Years Delivering</p>
+        </div>
+        <div class="hps-divider"></div>
+        <div class="hps-item">
+          <span data-count="12" data-suffix="+">0+</span>
+          <p>Sectors Covered</p>
+        </div>
+        <div class="hps-divider"></div>
+        <div class="hps-item">
+          <span data-count="98" data-suffix="%">0%</span>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FILTER BAR -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-bar">
+        <span class="filter-label"><i class="fas fa-filter"></i> Filter by:</span>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+          <button class="filter-btn" data-filter="consulting">Business Consulting</button>
+          <button class="filter-btn" data-filter="public">Public Sector</button>
+          <button class="filter-btn" data-filter="strategy">Strategic Advisory</button>
+          <button class="filter-btn" data-filter="valuation">Asset Valuation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS GRID -->
+  <section class="section projects-section">
+    <div class="container">
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1 — Featured Large -->
+        <article class="project-card card featured-card fade-up" data-category="infrastructure">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Infrastructure</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> Nigeria</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Urban Road Network Rehabilitation Programme</h3>
+          <p>End-to-end delivery management of a 47km urban road rehabilitation programme across three municipalities. Coordinated six contractors, government agencies, and utility companies to execute the programme 3 weeks ahead of schedule and 12% below original budget estimates.</p>
+          <div class="pc-outcomes">
+            <div class="pc-outcome">
+              <span class="po-val">47km</span>
+              <span class="po-lbl">Roads Rehabilitated</span>
+            </div>
+            <div class="pc-outcome">
+              <span class="po-val">12%</span>
+              <span class="po-lbl">Under Budget</span>
+            </div>
+            <div class="pc-outcome">
+              <span class="po-val">3wks</span>
+              <span class="po-lbl">Ahead of Schedule</span>
+            </div>
+            <div class="pc-outcome">
+              <span class="po-val">6</span>
+              <span class="po-lbl">Contractors Managed</span>
+            </div>
+          </div>
+          <div class="pc-tags">
+            <span>Project Management</span>
+            <span>Contractor Coordination</span>
+            <span>Government Relations</span>
+          </div>
+        </article>
+
+
+        <!-- Project 2 -->
+        <article class="project-card card fade-up delay-1" data-category="consulting">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Business Consulting</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> Nigeria</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Operational Efficiency Transformation — Manufacturing Firm</h3>
+          <p>Full operational restructuring for a mid-size manufacturing company. Identified 14 process inefficiencies, redesigned core workflows, and implemented a new performance management system.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Cost Reduction Achieved</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="28"></div>
+            </div>
+            <span class="pi-value">28%</span>
+          </div>
+          <div class="pc-tags">
+            <span>Process Redesign</span>
+            <span>Cost Optimisation</span>
+            <span>Change Management</span>
+          </div>
+        </article>
+
+
+        <!-- Project 3 -->
+        <article class="project-card card fade-up delay-2" data-category="public">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Public Sector</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> West Africa</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Government Asset Valuation Programme</h3>
+          <p>Conducted comprehensive independent valuation of over 200 public assets across three states — roads, buildings, utilities, and public facilities — providing a government-grade asset register for strategic planning and financial reporting.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Assets Valued</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="100"></div>
+            </div>
+            <span class="pi-value">200+</span>
+          </div>
+          <div class="pc-tags">
+            <span>Asset Valuation</span>
+            <span>Public Finance</span>
+            <span>Compliance</span>
+          </div>
+        </article>
+
+
+        <!-- Project 4 -->
+        <article class="project-card card fade-up" data-category="strategy">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Strategic Advisory</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> East Africa</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Market Entry Strategy — East African Logistics Sector</h3>
+          <p>Developed a market entry framework for an international client entering the East African logistics and supply chain sector. Included competitive mapping, regulatory assessment, risk profiling, and phased entry roadmap.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Markets Analysed</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="80"></div>
+            </div>
+            <span class="pi-value">4</span>
+          </div>
+          <div class="pc-tags">
+            <span>Market Research</span>
+            <span>Regulatory Mapping</span>
+            <span>Risk Assessment</span>
+          </div>
+        </article>
+
+
+        <!-- Project 5 -->
+        <article class="project-card card fade-up delay-1" data-category="public">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Public Sector</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> Nigeria</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>State Procurement Reform Programme</h3>
+          <p>Designed and implemented a procurement reform framework for a state ministry, aligning processes with Public Procurement Act requirements and international best practices. Reduced procurement cycle time by 40%.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Procurement Cycle Reduction</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="40"></div>
+            </div>
+            <span class="pi-value">40%</span>
+          </div>
+          <div class="pc-tags">
+            <span>Procurement Reform</span>
+            <span>Policy Development</span>
+            <span>Compliance</span>
+          </div>
+        </article>
+
+
+        <!-- Project 6 -->
+        <article class="project-card card fade-up delay-2" data-category="infrastructure">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Infrastructure</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> Nigeria</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Water Treatment Facility Feasibility Study</h3>
+          <p>Led a comprehensive feasibility study and environmental impact assessment for a 50,000m³/day water treatment facility. Delivered technical specifications, cost models, and contractor procurement strategy.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Population to Benefit</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="85"></div>
+            </div>
+            <span class="pi-value">500K+</span>
+          </div>
+          <div class="pc-tags">
+            <span>Feasibility Study</span>
+            <span>EIA</span>
+            <span>Water Infrastructure</span>
+          </div>
+        </article>
+
+
+        <!-- Project 7 -->
+        <article class="project-card card fade-up" data-category="consulting">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Business Consulting</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> Middle East</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Financial Services Firm Restructuring</h3>
+          <p>Organisational restructuring and performance improvement advisory for a regional financial services company. Streamlined reporting lines, redesigned incentive structures, and delivered a 3-year growth strategy.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Revenue Growth (Year 1)</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="18"></div>
+            </div>
+            <span class="pi-value">18%</span>
+          </div>
+          <div class="pc-tags">
+            <span>Restructuring</span>
+            <span>Growth Strategy</span>
+            <span>Incentive Design</span>
+          </div>
+        </article>
+
+
+        <!-- Project 8 -->
+        <article class="project-card card fade-up delay-1" data-category="valuation">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Asset Valuation</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> Nigeria</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Energy Company Pre-Acquisition Due Diligence</h3>
+          <p>Conducted comprehensive technical and financial due diligence for the acquisition of a mid-size energy company. Assessed plant condition, regulatory compliance, financial risk, and valuation gap analysis.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Deal Value Supported</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="95"></div>
+            </div>
+            <span class="pi-value">₦2.4B</span>
+          </div>
+          <div class="pc-tags">
+            <span>Due Diligence</span>
+            <span>Technical Assessment</span>
+            <span>Financial Modelling</span>
+          </div>
+        </article>
+
+
+        <!-- Project 9 -->
+        <article class="project-card card fade-up delay-2" data-category="infrastructure">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Infrastructure</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> West Africa</span>
+            </div>
+            <div class="pc-status pc-status-ongoing">Ongoing</div>
+          </div>
+          <h3>Regional Bridge Rehabilitation Programme</h3>
+          <p>Ongoing supervision and programme management of a multi-state bridge rehabilitation programme covering 22 bridges. Providing quality assurance, contractor management, and government liaison services.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Programme Completion</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="65"></div>
+            </div>
+            <span class="pi-value">65%</span>
+          </div>
+          <div class="pc-tags">
+            <span>Construction Supervision</span>
+            <span>Quality Assurance</span>
+            <span>Multi-state</span>
+          </div>
+        </article>
+
+
+        <!-- Project 10 -->
+        <article class="project-card card fade-up" data-category="strategy">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Strategic Advisory</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> Nigeria</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Agribusiness Sector Strategy — State Government</h3>
+          <p>Developed a 10-year agribusiness development strategy for a state government, including investment attraction framework, value chain analysis, and PPP model design for priority sub-sectors.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Investment Target Identified</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="75"></div>
+            </div>
+            <span class="pi-value">$150M+</span>
+          </div>
+          <div class="pc-tags">
+            <span>Sector Strategy</span>
+            <span>Investment Attraction</span>
+            <span>PPP Design</span>
+          </div>
+        </article>
+
+
+        <!-- Project 11 -->
+        <article class="project-card card fade-up delay-1" data-category="public">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Public Sector</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> East Africa</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Health Sector Capacity Building Programme</h3>
+          <p>Implemented an institutional strengthening programme for a national health ministry, covering financial management systems, HR restructuring, and performance monitoring frameworks for 60 health facilities.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Facilities Improved</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="100"></div>
+            </div>
+            <span class="pi-value">60</span>
+          </div>
+          <div class="pc-tags">
+            <span>Institutional Strengthening</span>
+            <span>Health Sector</span>
+            <span>Capacity Building</span>
+          </div>
+        </article>
+
+
+        <!-- Project 12 -->
+        <article class="project-card card fade-up delay-2" data-category="valuation">
+          <div class="pc-header">
+            <div class="pc-category">
+              <span class="tag">Asset Valuation</span>
+              <span class="pc-region"><i class="fas fa-map-marker-alt"></i> Middle East</span>
+            </div>
+            <div class="pc-status pc-status-done">Completed</div>
+          </div>
+          <h3>Commercial Real Estate Portfolio Valuation</h3>
+          <p>Independent valuation of a 14-property commercial real estate portfolio for a regional investment fund seeking institutional financing. Delivered RICS-compliant reports within a 6-week engagement.</p>
+          <div class="pc-impact-bar">
+            <span class="pi-label">Portfolio Value Assessed</span>
+            <div class="pi-track">
+              <div class="pi-fill" data-width="100"></div>
+            </div>
+            <span class="pi-value">14 Properties</span>
+          </div>
+          <div class="pc-tags">
+            <span>Real Estate Valuation</span>
+            <span>RICS Compliant</span>
+            <span>Investment Fund</span>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+
+      <!-- Empty state (hidden by default) -->
+      <div class="no-projects" id="noProjects" style="display:none;">
+        <i class="fas fa-search"></i>
+        <p>No projects found in this category.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner fade-up">
+        <div class="cta-text">
+          <h2>Have a Similar Challenge?</h2>
+          <p>Let's discuss how Steigler Services can deliver results for your project.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-arrow">Start a Conversation</a>
+          <a href="services.html" class="btn btn-outline-cta">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo">
+            <div class="logo-icon">S</div>
+            Steigler Services
+          </a>
+          <p>Delivering value-driven, high-impact consulting and engineering services across Africa, the Middle East, and Europe.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#vision">Vision &amp; Mission</a></li>
+            <li><a href="projects.html">Case Studies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#business">Business Consulting</a></li>
+            <li><a href="services.html#strategy">Strategic Advisory</a></li>
+            <li><a href="services.html#pm">Project Management</a></li>
+            <li><a href="services.html#infra">Infrastructure</a></li>
+            <li><a href="services.html#valuation">Asset Valuation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@steiglerservices.com.ng">info@steiglerservices.com.ng</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-globe"></i>
+            <span>Africa · Middle East · Europe</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon–Fri, 8:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Steigler Services. All rights reserved.</p>
+        <p>Business &amp; Management Consulting | Engineering &amp; Infrastructure</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
